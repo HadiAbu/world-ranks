@@ -60,7 +60,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 36px;
-    color: black;
+    color: var(--text-color);
     padding: 30px 40px 0 40px;
 }
 .details_row{

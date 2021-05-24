@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Head from 'next/head'
+import Head from 'next/head';
 import Link from 'next/link';
 
 import styles from './Layout.module.css';
@@ -18,7 +18,7 @@ const Layout = ({children, title="World Ranks"}) =>{
         localStorage.setItem("theme", theme);
         document.documentElement.setAttribute('data-theme', theme);
     }
-    
+
     const switchTheme = () => {
         theme === 'light' ? saveTheme('dark') : saveTheme('light');   
     }
