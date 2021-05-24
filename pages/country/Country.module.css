@@ -1,0 +1,113 @@
+.details_page{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;    
+}
+.overview_panel img{
+    width: 100%  ;
+}
+.overview_panel{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: var(--background-color-light);
+    box-shadow: var(--box-shadow);
+}
+.overview_panel{
+    margin-bottom: 30px;
+}
+.overview_name{
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 0;
+    opacity: 0.4;
+}
+.overview_region{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    margin-top: 4px;
+    margin-bottom: 24px;
+}
+.overview_numbers{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+.overview_label{
+    font-size: 14px;
+    color: var(--text-color-secondary)
+}
+.overview_value{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.details_panel{
+    height: 100%;
+    border-radius: 8px;
+    background-color: var(--background-color-light);
+    box-shadow: var(--box-shadow);
+
+}
+.details_heading{
+    width: 100%;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 36px;
+    color: black;
+    padding: 30px 40px 0 40px;
+}
+.details_row{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    border-bottom: solid 1px var(--text-color-secondary);
+
+    padding: 20px 40px;
+}
+.details_row_label{
+    color: var(--text-color-light);
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: 500;
+}
+.details_borders{
+    padding: 20px;
+}
+.details_borders_heading{
+    color: var(--text-color-light);
+    padding: 24px;
+}
+.details_borders img{
+    width: 100%;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.details_borders_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px,1fr));
+}
+.details_borders_country_name{  
+    text-align: center;
+}
+
+@media screen and (min-width: 720px){
+
+    .container{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        gap: 24px;
+    }
+    .container_left{ 
+        grid-column: 1/ span 4 ;
+    }
+    .container_right{
+        grid-column: 5/ span 8 ;
+    }
+    
+}
