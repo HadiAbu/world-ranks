@@ -1,5 +1,5 @@
-# world-ranks
-A fullstack project built in React + NextJS.
+# World Ranks Project
+A fullstack project built in React + NextJS, displaying information like population, area, gini, capitol, spoken languages,...
 
 Features:
 1. Responsive: Made for mobile and desktop.
