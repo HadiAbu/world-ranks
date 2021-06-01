@@ -91,7 +91,7 @@ const DetailsRow = ({label, value}) =>{
 
 export default Country;
 
-export const getStaticPath = async () => {
+export const getStaticPaths = async () => {
     const res = await fetch('https://restcountries.eu/rest/v2/all');
     const countries = await res.json();
     
@@ -100,7 +100,7 @@ export const getStaticPath = async () => {
         })
     )
     return {
-        paths,
+        paths: paths,
         fallback: false
     }
 }
